@@ -34,7 +34,7 @@
     "psr-4": {
       "Acquia\\Blt\\Custom\\": "src/"
     },
-    "exclude-from-classmap": ["vendor/drupal/core"]
+    "exclude-from-classmap": ["vendor/drupal/core/*"]
   },
   "extra": {
     "composer-exit-on-patch-failure": true,
