@@ -70,14 +70,6 @@
         "typhonius/acquia_cli": "^1.0",
         "davereid/drush-acquia-hook-invoke": "dev-master"
     },
-    "scripts": {
-        "pre-install-cmd": [
-          "composer dump-autoload --optimize --classmap-authoritative"
-        ],
-        "pre-update-cmd": [
-          "composer dump-autoload --optimize --classmap-authoritative"
-        ]
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {

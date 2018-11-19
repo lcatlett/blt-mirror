@@ -2,8 +2,7 @@
     "license": "proprietary",
     "type": "project",
     "config": {
-        "sort-packages": true,
-        "optimize-autoloader": true
+        "sort-packages": true
     },
     "repositories": {
         "drupal": {
@@ -44,14 +43,6 @@
             "replace": false,
             "ignore-duplicates": true
         }
-    },
-    "scripts": {
-        "pre-install-cmd": [
-          "composer dump-autoload --optimize --classmap-authoritative"
-        ],
-        "pre-update-cmd": [
-          "composer dump-autoload --optimize --classmap-authoritative"
-        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true
