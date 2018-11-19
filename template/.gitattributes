@@ -85,3 +85,7 @@
 /.gitattributes export-ignore
 /symfony.lock export-ignore
 /composer.lock export-ignore
+/tests export-ignore
+/blted8 export-ignore
+/vendor export-ignore
+/.rules export-ignore
