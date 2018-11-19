@@ -50,8 +50,6 @@ before_install:
   - sudo service memcached status
   - phpenv config-rm xdebug.ini
   - phpenv config-add travis.php.ini
-  - composer self-update 1.7.2
-  - composer -V
   - composer clear-cache
   - export COMPOSER_PROCESS_TIMEOUT=2000
   - ls -la $HOME
