@@ -48,7 +48,10 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
-    "patches": []
+   "patches": {
+            "drupal/core": {
+                "apcu.": "https://www.drupal.org/files/issues/drupal-2937534-6-prefer-composer-apcu.patch"
+            },
   },
   "scripts": {
     "blt-alias": "blt blt:init:shell-alias -y --ansi",
