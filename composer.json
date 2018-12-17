@@ -67,7 +67,6 @@
         "optimize-autoloader": true,
         "apcu-autoloader": true
     },
-    },
     "suggest": {
         "hirak/prestissimo": "^0.3",
         "typhonius/acquia_cli": "^1.0",
