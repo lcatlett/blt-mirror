@@ -47,7 +47,6 @@
             "Acquia\\Blt\\Tests\\": "tests/phpunit/src/",
             "Acquia\\Blt\\Tests\\Robo\\": "tests/phpunit/Robo/"
         },
-        "exclude-from-classmap": ["vendor/drupal/core/*"]
     },
     "extra": {
         "class": "Acquia\\Blt\\Composer\\Plugin",
