@@ -44,11 +44,11 @@ class ComposerCommand extends BltTasks {
       $this->say("This is likely due to an incompatibility with your existing packages.");
       $confirm = $this->confirm("Should BLT attempt to update all of your Composer packages in order to find a compatible version?");
       if ($confirm) {
-        $command = "composer require '{$package_name}:{$package_version}' --no-update ";
+        $command = "composer require '{$package_name}:{$package_version}' --no-update  --optimize-autoloader --apcu-autoloader ";
         if ($options['dev']) {
           $command .= "--dev ";
         }
-        $command .= "&& composer update";
+        $command .= "&& composer update --optimize-autoloader --apcu-autoloader";
         $task = $this->taskExec($command)
           ->printOutput(TRUE)
           ->printMetadata(TRUE)

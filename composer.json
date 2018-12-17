@@ -63,7 +63,10 @@
     },
     "config": {
         "sort-packages": true,
-        "php": "7"
+        "php": "7",
+        "optimize-autoloader": true,
+        "apcu-autoloader": true
+    },
     },
     "suggest": {
         "hirak/prestissimo": "^0.3",

@@ -162,7 +162,7 @@ class SandboxManager {
       && '"composer require --dev --no-update webflo/drupal-core-require-dev:~"' . $drupal_core_version;
     }
 
-    $command .= 'composer install --prefer-dist --no-progress --no-suggest -vvv';
+    $command .= 'composer install --prefer-dist --no-progress --no-suggest  --optimize-autoloader --apcu-autoloader';
 
     $process = new Process($command, $this->sandboxMaster);
     $process->setTimeout(60 * 60);
