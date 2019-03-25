@@ -79,3 +79,12 @@
 *.PDF     -text diff
 *.jar     -text diff
 *.JAR     -text diff
+
+
+/.gitattributes     export-ignore
+/.circleci					export-ignore
+/.docker						export-ignore
+/build              export-ignore
+/scenarios          export-ignore
+/blted8			          export-ignore
+/tests							export-ignore
