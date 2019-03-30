@@ -39,7 +39,7 @@ addons:
 before_install:
   # Exit build early if only documentation was changed in a Pull Request.
   - source ${BLT_DIR}/scripts/travis/exit_early
-  - if [[ "$(php -v | grep 'PHP 7')" ]]; then yes | pecl install -f apcu;
+  - if [[ "$(php -v | grep 'PHP 7')" ]]; then yes | pecl install -f apcu; fi
   - phpenv config-rm xdebug.ini
   - phpenv config-add travis.php.ini
   - composer validate --no-check-all --ansi
