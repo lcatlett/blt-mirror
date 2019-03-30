@@ -88,3 +88,5 @@
 /scenarios          export-ignore
 /blted8			          export-ignore
 /tests							export-ignore
+/.rules							export-ignore
+/tmp		export-ignore

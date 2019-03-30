@@ -44,6 +44,7 @@ before_install:
   - composer validate --no-check-all --ansi
   - composer install -vvv
   - composer config -l
+  - composer info
 
 install:
   - source ${BLT_DIR}/scripts/travis/setup_environment
