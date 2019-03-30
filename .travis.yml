@@ -46,6 +46,7 @@ before_install:
   - composer install -vvv
   - composer config -l
   - composer info
+  - php -i
 
 install:
   - source ${BLT_DIR}/scripts/travis/setup_environment
