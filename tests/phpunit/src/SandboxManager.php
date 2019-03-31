@@ -159,7 +159,7 @@ class SandboxManager {
         'symlink' => TRUE,
       ],
     ];
-    $composer_json_contents->require->{'lcatlett/blt'} = '*@dev';
+    $composer_json_contents->require->{'acquia/blt'} = '*@dev';
     $composer_json_contents->repositories->{'blt-require-dev'} = (object) [
       'type' => 'path',
       'url' => $this->bltRequireDevPackageDir,
