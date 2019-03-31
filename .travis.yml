@@ -43,9 +43,12 @@ before_install:
   - phpenv config-rm xdebug.ini
   - phpenv config-add travis.php.ini
   - composer validate --no-check-all --ansi
-  - composer install -vvv
+  - composer install -vv
   - composer config -l
-  - composer info
+  - composer depends drupal/core --tree
+  - composer depends webflo/drupal-core-require-dev --tree
+  - composer depends webflo/drupal-core-strict --tree
+
   - php -i
 
 install:
