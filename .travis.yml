@@ -46,7 +46,6 @@ before_install:
   - composer install -vv
   - composer config -l
   - composer depends drupal/core --tree
-  - composer depends webflo/drupal-core-require-dev --tree
   - composer depends webflo/drupal-core-strict --tree
 
   - php -i
