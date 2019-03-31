@@ -27,7 +27,6 @@ cache:
   - "$HOME/.console"
   - "$HOME/.drush/cache"
   - "$HOME/.nvm"
-  -  "/tmp/blt-sandbox-instance/.rules"
 
 services:
 - mysql
