@@ -181,7 +181,7 @@ class SandboxManager {
     if ($drupal_core_version && $drupal_core_version != 'default') {
       $command .= 'composer require "webflo/drupal-core-strict:' . $drupal_core_version . '" --no-update --no-interaction && ';
     }
-    $command .= 'composer install --prefer-dist --no-progress --no-suggest -vv';
+    $command .= 'composer install --prefer-dist --no-progress --no-suggest';
 
     $process = new Process($command, $this->sandboxMaster);
     $process->setTimeout(60 * 60);

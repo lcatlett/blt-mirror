@@ -27,6 +27,7 @@ cache:
   - "$HOME/.console"
   - "$HOME/.drush/cache"
   - "$HOME/.nvm"
+  -  "/tmp/blt-sandbox-instance/.rules"
 
 services:
 - mysql
@@ -43,11 +44,9 @@ before_install:
   - phpenv config-add travis.php.ini
   - composer validate --no-check-all --ansi
   - composer install -vv
-  - composer config -l
   - composer depends drupal/core --tree
   - composer depends webflo/drupal-core-strict --tree
 
-  - php -i
 
 install:
   - source ${BLT_DIR}/scripts/travis/setup_environment
@@ -57,4 +56,4 @@ install:
   - mysql -u root -e "CREATE DATABASE drupal4; GRANT ALL ON drupal4.* TO 'drupal'@'localhost';"
 
 script:
-  - ${BLT_DIR}/vendor/bin/robo release:test -v
+  - ${BLT_DIR}/vendor/bin/robo release:test
