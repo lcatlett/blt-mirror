@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4be911eed42d574253b22afe20b53452",
+    "content-hash": "76dd998c676601fde4c1f8a627e59361",
     "packages": [
         {
             "name": "acquia/http-hmac-php",
@@ -2372,7 +2372,7 @@
             "version": "2.0.0-alpha7",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/memcache",
+                "url": "https://git.drupalcode.org/project/memcache.git",
                 "reference": "8.x-2.0-alpha7"
             },
             "dist": {
@@ -2444,7 +2444,7 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/seckit",
+                "url": "https://git.drupalcode.org/project/seckit.git",
                 "reference": "8.x-1.1"
             },
             "dist": {
@@ -8647,6 +8647,6 @@
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "7.0.11"
+        "php": "7"
     }
 }
