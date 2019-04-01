@@ -94,12 +94,13 @@
         "drupal/drupal": "*"
     },
     "config": {
-        "sort-packages": true,
-        "php": "7",
-        "optimize-autoloader": true,
-        "preferred-install": {
-            "drupal/core": "dist"
-        }
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "process-timeout": 9600,
+    "platform": {
+        "php": "7.0.11"
+    }
     },
     "suggest": {
         "hirak/prestissimo": "^0.3",
