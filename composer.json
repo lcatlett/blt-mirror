@@ -63,7 +63,10 @@
             "Acquia\\Blt\\": "src/",
             "Acquia\\Blt\\Tests\\": "tests/phpunit/src/",
             "Acquia\\Blt\\Tests\\Robo\\": "tests/phpunit/Robo/"
-        }
+        },
+
+        "exclude-from-classmap": ["vendor/drupal/core/"]
+
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
