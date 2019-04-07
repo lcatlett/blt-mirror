@@ -90,7 +90,6 @@
     },
     "config": {
         "sort-packages": true,
-        "php": "7",
         "preferred-install": {
             "drupal/core": "dist"
         }
