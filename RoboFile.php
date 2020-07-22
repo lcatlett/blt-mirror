@@ -128,10 +128,10 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   ]) {
     $test_project_dir = $this->bltRoot . "/" . $options['project-dir'];
     $this->prepareTestProjectDir($test_project_dir);
-    $this->yell("Creating project from acquia/blt-project:{$options['base-branch']}-dev.");
+    $this->yell("Creating project from lcatlett/blt-project:{$options['base-branch']}-dev.");
     $return = $this->taskExecStack()
       ->dir($this->bltRoot . "/..")
-      ->exec("COMPOSER_PROCESS_TIMEOUT=2000 composer create-project acquia/blt-project:{$options['base-branch']}-dev blted8 --no-interaction")
+      ->exec("COMPOSER_PROCESS_TIMEOUT=2000 composer create-project lcatlett/blt-project:{$options['base-branch']}-dev blted8 --no-interaction")
       ->run();
 
     return $return;
@@ -251,9 +251,9 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   public function subtreePushBltProject($options = [
     'branch' => NULL,
   ]) {
-    $this->say("Pushing to acquia/blt-project");
+    $this->say("Pushing to lcatlett/blt-project");
     $prefix = "subtree-splits/blt-project";
-    $url = "git@github.com:acquia/blt-project.git";
+    $url = "git@github.com:lcatlett/blt-project.git";
     if (!$options['branch']) {
       $options['branch'] = $this->getCurrentBranch();
     }
@@ -275,9 +275,9 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   public function subtreePushBltRequireDev($options = [
     'branch' => NULL,
   ]) {
-    $this->say("Pushing to acquia/blt-require-dev");
+    $this->say("Pushing to lcatlett/blt-require-dev");
     $prefix = "subtree-splits/blt-require-dev";
-    $url = "git@github.com:acquia/blt-require-dev.git";
+    $url = "git@github.com:lcatlett/blt-require-dev.git";
     if (!$options['branch']) {
       $options['branch'] = $this->getCurrentBranch();
     }
